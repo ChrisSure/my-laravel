@@ -1,0 +1,34 @@
+1. Встановлення laravel;
+
+
+2. Копіювання файлів .htaccess;
+	
+	
+3. Настройка даних db в файлі .env;
+
+
+4. Ініціалізація міграцій    php artisan migrate;
+
+5. Ініціалізація початкових даних в базу   
+	php artisan db:seed --class=SettingTableSeeder
+	php artisan db:seed --class=PermissionTableSeeder
+	php artisan db:seed --class=RolesTableSeeder
+	php artisan db:seed --class=UsersTableSeeder
+
+6. Ініціалізація роботи адмінки (login, signup) php artisan make:auth;
+
+7. Встановлення ролей Admin, SuperAdmin, User - створення middleware admin;
+
+8. Встановлення composer пакетів: 
+	- Form, Html -> Collective Html --- хелпер форм і тегів; ++
+	- Widget -> Arriot --- генерація і робота з віджетами; ++
+	- Breadcrumbs -> DaveJanssMiller --- Хлібні крошки ++
+	- Captcha -> greggilbert/recaptcha --- ReКаптча(google) ++
+	- Meta-Tags -> Torran/laravel-meta-tags --- Мета теги ++
+	- Logs -> stevebauman/log-reader ---Робота з логами ++
+	
+9. Встановлюєм CKEditor. Скачуєм архів з офіційного сайту і підключаємо вверху сторінки файл ckeditor.js
+
+10. Встановлюємо ElFinder -> barryvdh/laravel-elfinder ---elfinder пакет
+	-Перенести файл elfinder.php в config з настройками
+	
